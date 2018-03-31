@@ -17,7 +17,7 @@ public class RunApplication {
 	 public static String password="//*[@id='ap_password']";
 	 public static  String continueBtn="//*[@id=\"continue\"]";
 	 public static String loginbtn="//*[@id='signInSubmit']";
-	 
+	 public static String catagorylink="//*[@id=\"nav-link-shopall\"]";
 	public static void main(String[] args) {
 		
 				
@@ -35,6 +35,9 @@ public class RunApplication {
 		driver.findElement(By.xpath(continueBtn)).click();
 		driver.findElement(By.xpath(password)).sendKeys("amazon@123");
 		driver.findElement(By.xpath(loginbtn)).click();
+		driver.findElement(By.xpath(catagorylink)).click();
+		System.out.println("clicked on shop by catagary link");
+		
 		
 		// TODO Auto-generated method stub
 
